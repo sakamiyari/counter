@@ -21,14 +21,29 @@
         input:hover{
             cursor: pointer;
         }
+        .purasu{
+          width: 20%;
+          height: 2em;
+        }
+        /*普通に表示させてほしいよう*/
+        p.hutuu{
+        font-size: unset;
+        }
     </style>
 </head>
 <body>
     <p id="hyouji"></p>
     <br>
-    <input type="button" value="+" onclick="countup()">
+    <input type="button" value="+" onclick="countup()" class="purasu">
+    <br>
     <input type="button" value="-" onclick="countdown()">
     <input type="button" value="リセット" onclick="rest()">
+    <br>
+    <!--idはvalue変更用-->
+    <input type="button"  value="色違いが出現する確率を表示する" class="kakuritu" id="namae" onclick="kaku()">
+    <br>
+    <p id="page" class="hutuu"></p>
+    <!--上のやつは基本何も表示しない-->
     <script src="count.js"></script>
 </body>
 </html>
