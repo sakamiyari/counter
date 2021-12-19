@@ -52,7 +52,7 @@ function hendou(){
     let $namae=document.getElementById("namae");
     if($namae.value=="色違いの出現する確率を非表示にする"){
         if(count>0){
-            comb=Math.floor((count*kakuritu*Math.pow((1-kakuritu),(count-1)))*100*1000)/100;
+            comb=Math.floor((count*kakuritu*Math.pow((1-kakuritu),(count-1)))*100*1000)/1000;
             $page.innerText="確率:"+comb+"%"
         }else{
             //カウントが0だとエラー
